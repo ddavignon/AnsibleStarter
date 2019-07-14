@@ -1,0 +1,4 @@
+deploy_user: deployer
+deploy_group: deployers
+deploy_user_password: helloWorld123
+authorized_key_filename: "{{ lookup('env', 'AUTHORIZED_KEY') }}"

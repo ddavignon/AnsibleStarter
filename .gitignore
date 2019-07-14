@@ -1,0 +1,9 @@
+venv/
+*.pub
+serverconfig/*serverconfig*
+*deploy_key*
+first_playbook/*first_playbook*
+first_playbook/hosts
+serverconfig/hosts
+.idea/
+*.DS_Store*
