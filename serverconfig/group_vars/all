@@ -1,0 +1,24 @@
+deploy_user: deployer
+deploy_group: deployers
+ssh_dir: "/Users/dustin/Code/AnsibleCourse/serverconfig/"
+ssh_key_name: "serverconfig"
+
+db_name: "flaskdeploy"
+db_user: "{{ deploy_user }}"
+db_password: pleaseuseagoodpassword
+
+app_name: flaskdeploy
+fqdn: "www.anotherprojectserver.com"
+web_serve_dir: "/var/www/html"
+ssl_cert_email: "dustindavignon@gmail.com"
+
+wsgi_server_port: 8000
+sub_app_dir: "/home/{{ deploy_user }}/{{ app_name }}/app"
+
+personal_access_token:  personalaccesstokengoeshere
+app_dir: "/home/{{ deploy_user }}/{{ app_name }}"
+local_deploy_key_dir: "~/Code/AnsibleCourse/serverconfig"
+code_repository: "https://ddavignon:{{ personal_access_token }}@github.com/ddavignon/flask-git-dashboard.git"
+read_only_deploy_key_name: deploy_key
+
+venv_dir: "/home/{{ deploy_user }}/venv"
